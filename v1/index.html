@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jabali</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="header">
+    <h1>Jabali Quiz</h1>
+    <div id="coin-container">
+      <img id="coin-img" src="images/coin.svg" alt="">
+      <h3 id="coins">1000</h3>
+    </div>
+  </div>
+  <main>
+    <h2 class="text-center" id="place-name">BhedaGhat Quiz</h2>
+    <div id="question-container">
+      <span id="q-no">Q10:</span>
+      <p id="question"> </p>
+    </div>
+
+    <div id="option-container">
+      <div class="background-reset">
+        <input type="radio" id="option-a" name="selectedOption" value="">
+        <label for="option-a">Option 1</label>
+        <details>
+          <summary>See Details</summary>
+          <p class="details" id="detail-a">QQ</p>
+        </details>
+      </div>
+      <div class="background-reset">
+        <input type="radio" id="option-b" name="selectedOption" value="">
+        <label for="option-b">Option 2</label>
+        <details>
+          <summary>See Details</summary>
+          <p class="details" id="detail-b">QQ</p>
+        </details>
+      </div>
+      <div class="background-reset">
+        <input type="radio" id="option-c" name="selectedOption" value="">
+        <label for="option-c">Option 3</label>
+        <details>
+          <summary>See Details</summary>
+          <p class="details" id="detail-c">QQ</p>
+        </details>
+      </div>
+      <div class="background-reset">
+        <input type="radio" id="option-d" name="selectedOption" value="">
+        <label for="option-d">Option 4</label>
+        <details>
+          <summary>See Details</summary>
+          <p class="details" id="detail-d">QQ</p>
+        </details>
+      </div>
+      <!-- <div id="see-details">
+        <details>
+          <summary>See Details</summary>
+          <p id="details"> Lorem </p>
+        </details>
+      </div> -->
+    </div>
+
+    <div id="btn-container">
+      <button id="prev-btn" class="btn">Prev</button>
+      <button id="check-btn" class="btn">Check</button>
+      <button id="next-btn" class="btn">Next</button>
+    </div>
+    <div class="text-center">
+      <button id="submit-btn" class="btn">Submit Quiz</button>
+    </div>
+  </main>
+
+  <!-- Score Section -->
+  <section id="score-window">
+    <h2 class="text-left">
+      Correct Answers: <span id="correct-answers"> </span>
+    </h2>
+    <h2 class="text-left">
+      Incorrect Answers: <span id="incorrect-answers"> </span>
+    </h2>
+    <h2 class="text-left">
+      Coins Earned: <span id="coins-earned"> </span>
+    </h2>
+  </section>
+</body>
+<script src="script.js"></script>
+
+</html>

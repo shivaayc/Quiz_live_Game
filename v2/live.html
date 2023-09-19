@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevaSthanam Quiz- Kedarnath</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/rawgit-qrCode-qrPacked.js"></script>
+    
+    <!-- <link rel="stylesheet" href="css/qrCodeScanner.css" /> -->
+</head>
+
+<body>
+    <div id="header">
+        <h1>DevaSthanam</h1>
+        <div id="coin-container">
+            <img id="coin-img" src="images/coin.svg" alt="">
+            <h3 id="coins">1000</h3>
+        </div>
+    </div>
+    <h2 class="text-center" id="place-name">Kedarnath Quiz</h2>
+
+    <!-- Historical and Geographical Section -->
+    <main>
+
+        <div id="question-container">
+            <span id="q-no">Q10:</span>
+            <p id="question"> </p>
+        </div>
+        <div id="img-container">
+            <img id="q-img" src="" alt="">
+        </div>
+
+        <div id="qr-container">      
+            <a id="btn-scan-qr">
+              <!-- <img src="images/qr-img.svg"> -->
+              <button id="scan-qr" class="btn">Scan QR</button>
+            </a>
+      
+            <canvas hidden="" id="qr-canvas"></canvas>
+      
+            <div id="qr-result" hidden="">
+              <span id="outputData"></span>
+            </div>
+          </div>
+
+        <div id="btn-container">
+            <button id="prev-btn" class="btn">Prev</button>
+            <button id="check-btn" class="btn">Check</button>
+            <button id="next-btn" class="btn">Next</button>
+        </div>
+        <div class="text-center">
+            <button id="submit-btn" class="btn">Submit Quiz</button>
+        </div>
+    </main>
+
+    <!-- Score Section -->
+    <section id="score-window">
+        <h2 class="text-left">
+            Correct Answers: <span id="correct-answers"> </span>
+        </h2>
+        <h2 class="text-left">
+            Incorrect Answers: <span id="incorrect-answers"> </span>
+        </h2>
+        <h2 class="text-left">
+            Coins Earned: <span id="coins-earned"> </span>
+        </h2>
+    </section>
+    <script src="script/qrCodeScanner.js"></script>
+    <script src="script/live.js"></script>
+</body>
+
+
+</html>

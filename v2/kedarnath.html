@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevaSthanam Quiz- Kedarnath</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="popup-container">
+        <div class="popup">
+            <h2 class="popup-heading">Welcome to DevaSthanam</h2>
+            <p class="popup-para">You get couple of seconds to memorize the images with their positions. After that, you
+                have to match the same images in pair of 2. For Every correct match you get 100 points and for every
+                wrong match you lose 10 points. The goal is to get the highest points. Enjoy!!!</p>
+            <button type="button" onclick="hidePopup();" class="button popup-btn">Start Game</button>
+        </div>
+    </div>
+    <div id="popup-effected-blur-area">
+        <div id="header">
+            <h1>DevaSthanam</h1>
+            <div id="coin-container">
+                <img id="coin-img" src="images/coin.svg" alt="">
+                <h3 id="coins">1000</h3>
+            </div>
+        </div>
+        <h2 class="text-center" id="place-name">Kedarnath Quiz</h2>
+
+        <!-- Quiz Sections -->
+        <div id="quiz-sections">
+            <a href="historical.html">
+                <div id="historical-section">Historical</div>
+            </a>
+            <a href="geographical.html">
+                <div id="geographical-section">Geographical</div>
+            </a>
+            <a href="live.html">
+                <div id="live-section">Live</div>
+            </a>
+            <div id="puzzle-section">Puzzle</div>
+        </div>
+
+        <!-- Score Section -->
+        <section id="score-window">
+            <h2 class="text-left">
+                Correct Answers: <span id="correct-answers"> </span>
+            </h2>
+            <h2 class="text-left">
+                Incorrect Answers: <span id="incorrect-answers"> </span>
+            </h2>
+            <h2 class="text-left">
+                Coins Earned: <span id="coins-earned"> </span>
+            </h2>
+        </section>
+    </div>
+</body>
+<script src="script/script.js"></script>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Code Scanner</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script/rawgit-qrCode-qrPacked.js"></script>
+  </head>
+
+  <body>
+    <div id="header">
+        <h1>DevaSthanam</h1>
+        <div id="coin-container">
+            <img id="coin-img" src="images/coin.svg" alt="">
+            <h3 id="coins">1000</h3>
+        </div>
+    </div>
+    
+    <div id="container ">
+      <h1 class="text-center">Scanner QR</h1>
+
+      <div class="text-center">
+        <button id="btn-scan-qr" class="btn">Scan QR</button>
+    </div>
+
+      <canvas hidden="" id="qr-canvas"></canvas>
+
+      <div id="qr-result" hidden="">
+        <b>Data:</b> <span id="outputData"></span>
+      </div>
+      
+    </div>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
